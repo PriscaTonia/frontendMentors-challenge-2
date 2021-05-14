@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 body{
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     padding: 50px 20px;
@@ -14,7 +16,6 @@ body{
 
 /* mobile view, general container */
 .container{
-    background-color: brown;
     color: white;
     display: flex;
     flex-direction: column;
@@ -22,12 +23,12 @@ body{
 }
 /* general styling for all sections */
 .container section{
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 30px 50px 30px 50px;
-    border-radius: 8px 8px 0px 0px;
+   
 }
 .container section h2{
     color: hsl(0, 0%, 95%);
@@ -44,12 +45,14 @@ body{
     outline: none;
     width: 70%;
     padding: 10px 20px 10px 20px;
+    margin-top: 50px;
     border-radius: 25px;
     font-size: 1rem;
 }
 
 /* personal section styling */
 .sedan{
+    border-radius: 8px 8px 0px 0px;
     background-color: hsl(31, 77%, 52%);
 }
 .sedan button{
@@ -65,6 +68,7 @@ body{
 .suv{
     background-color: hsl(184, 100%, 22%);
 }
+
 .suv button{
     color: hsl(184, 100%, 22%);
     transition-duration: 0.4s;
@@ -76,6 +80,7 @@ body{
 }
 
 .luxury{
+    border-radius: 0px 0px 8px 8px;
     background-color: hsl(179, 100%, 13%);
 }
 .luxury button{
@@ -86,4 +91,24 @@ body{
     background-color: hsl(179, 100%, 13%);
     color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
+}
+
+/* desktop view */
+@media screen and (max-width: 2000px) and (min-width:900px){
+    body{
+        padding: 50px 50px;
+    }
+    
+    .container{
+        flex-direction: row;
+    }
+    .container section button{
+        width: 80%;
+    }
+    .sedan{
+        border-radius: 8px 0px 0px 8px;
+    }
+    .luxury{
+        border-radius: 0px 8px 8px 0px;
+    }
 }
