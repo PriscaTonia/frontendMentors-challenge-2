@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding: 50px 20px;
+}
+
+/* Taking a mobile first approach */
+
+/* mobile view, general container */
+.container{
+    background-color: brown;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+/* general styling for all sections */
+.container section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 50px 30px 50px;
+    border-radius: 8px 8px 0px 0px;
+}
+.container section h2{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+.container section p{
+    color: hsl(0, 0%, 100%, 0.75);
+    font-size: 0.95rem;
+}
+.container section button{
+    border: none;
+    outline: none;
+    width: 70%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+/* personal section styling */
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+.sedan button{
+    color: hsl(31, 77%, 52%);
+    transition-duration: 0.4s;
+}
+.sedan button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv button{
+    color: hsl(184, 100%, 22%);
+    transition-duration: 0.4s;
+}
+.suv button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+    transition-duration: 0.4s;
+}
+.luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
